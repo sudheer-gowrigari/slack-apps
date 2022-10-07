@@ -46,8 +46,7 @@ slackApp.message('', async ({ message, say }) => {
 
   console.log('⚡️ Bolt app is running!');
 })();
-//https://levelup.gitconnected.com/how-to-list-slack-users-with-node-7121a55efde8
-//window.slackUsersList = [];
+
 (async () => {
     const result = await slackApp.client.users.list({
         token: process.env.SLACK_BOT_TOKEN,
@@ -81,8 +80,6 @@ async function findConversation(name) {
     console.error(error);
   }
 }
-// https://hooks.slack.com/services/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
-// https://hooks.slack.com/services/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
 
 // Find conversation with a specified channel `name`
 const conversationId = await findConversation("figma-designs-lwr-sites");
