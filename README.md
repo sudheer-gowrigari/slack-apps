@@ -9,8 +9,10 @@ After you fill out an app name (you can change it later) and pick a workspace to
 
 This page contains an overview of your app in addition to important credentials you’ll need later, like the Signing Secret under the App Credentials header.
 
-# Setting up your project
+Update ```.env ``` file with your slack auth
 
+# Setting up your project
+```
 yarn install
 node app.js
-
+```
